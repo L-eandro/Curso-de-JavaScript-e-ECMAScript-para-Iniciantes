@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    De que pais você é? <input type="text" name="" id="pais">
+    <input type="button" value="verificar" onclick="verific()">
+    <div id="res"></div>
+
+
+    <script>
+        
+        function verific() {
+            var p = document.querySelector ('input#pais')
+            var res = document.querySelector ('div#res')
+            var resp = String (p.value)
+            res.innerHTML = `<p> Você é do <strong>${resp}</strong> ,</p>`
+            if (resp == 'brasil') {
+                res.innerHTML += `<p>Sua nacionalidade é <strong>brasileiro</strong> !</p>`
+            } else {
+                res.innerHTML += `Você é estrangeiro!`
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>

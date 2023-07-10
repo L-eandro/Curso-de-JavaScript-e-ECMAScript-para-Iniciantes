@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(74, 126, 109);
+            font: normal 10pt arial;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+<h1>Iniciando os estudos com o <strong>DOM</strong> </h1>
+<p>Aqui vai o resultado</p>
+<p>Aprendendo a usar o <strong>DOM</strong>  em <strong>JavaScript</strong>  </p>
+<div id = 'msg'>Clique em mim</div>
+
+    <script>
+        var p1 = window.document.getElementById('msg')
+        document.getElementById('msg').innerText = 'ola'
+        
+        
+        
+
+
+
+       /* var s0 = window.document.getElementsByTagName('strong')[0]
+        var s1 = document.getElementsByTagName ('strong')[2]
+        var s2 = document.getElementsByTagName ('strong')[1]
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+
+        window.document.write ('Está escrito : ' + p1.innerText ) 
+        window.document.write ('</br> Está escrito : ' + p2.innerHTML)
+        
+        s0.style.color = 'red'
+        s1.style.color = 'orange'
+        s2.style.color = 'blue'
+        p1.style.color = 'pink'
+        p2.style.color = 'white'
+
+        var d = window.document.getElementById ('msg')
+        d.style.background = 'green'
+         */
+    </script>
+</body>
+</html>
